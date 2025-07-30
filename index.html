@@ -1,24 +1,13 @@
 <html>
   <head>
-    <title>Hojaifa Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact</title>
     <style>
-      * {
-        margin: 0;
-      }
-
       body {
-        background-color: teal;
+        background-color: #202930;
         color: white;
       }
       
-      nav {
-        display: flex;
-        align-items: center;
-        background-color: rgb(38, 203, 209);        
-      }
-      
-      div img {
+      nav img {
         width: 50px;
         border-radius: 8px;
       }
@@ -40,34 +29,83 @@
         color: white;
       }
       
-      img {
-        width: 500px;
-        border-radius: 15px;        
+      div h1 {
+        font-size: 60px;
+      }
+      
+      input {
+        background-color: white;
+        width: 70%;
+        margin-left: 124;
+        font-size: 20px;
+        padding: 16px 16px;
+        border-radius: 10px;
+        border-color: black;        
+      }
+      
+      textarea {
+        background-color: white;
+        width: 70%;
+        margin-left: 124;
+        font-size: 20px;
+        padding: 16px 16px;
+        border-radius: 10px;
+        border-color: black;        
+      }
+      
+      button {
+        background-color: #2e184d;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 20px;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; 
+        cursor: pointer;
+      }
+      
+      button:hover{
+        opacity:80%;
+        cursor: pointer;
       }
 
+      form {
+        margin: auto;
+        padding: 10px 20px;
+        margin-left: 15%;
+        margin-right: 10%;
+      }
+
+      h1 {
+        text-align: center;
+        
+      }    
+      
       a {
         text-decoration: none;
         font-size: 22px;
         color: black;
-      }     
+      }  
     </style>
-  </head>
-  <body>
-    <div>
+    </head>
+    <body>
     <nav>
-      <img src="https://i.ibb.co/LD5Wpybp/hojaifa.jpg" alt="hojaifa">
+       <img src="https://i.ibb.co/LD5Wpybp/hojaifa.jpg" alt="hojaifa">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://github.com/hojaifa23/portfolio/edit/main/index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
     </nav>
-    </div><br>
-    <br>
-   <img src="https://i.ibb.co/C33scb1V/programmer-developer-flat-style-illustration-1045902-516.jpg" alt="logo">
-    <h1>HI! I'm Hojaifa</h1>
-    <h2>I'm not a professional Developer. I'm new to this line. My skills are constantly improving.</h2>
-      <footer>
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-x-twitter"></i>
-    </section>
-  </body>
+    <h1>Contact me</h1>
+    </div>
+    <form action="https://formspree.io/f/mwpqbjeg" method="POST">
+    <input type="text" name="full" placeholder="Full Name" autocomplete="off" required>
+    <input type="email" name="email" placeholder="E-mail Addres" autocomplete="off" required>
+    <textarea rows="5" cols="60" name="message" placeholder="Enter Text" autocomplete="off" required></textarea>
+    <button type="submit">Send message</button>
+    </form>
+    </body>
 </html>
