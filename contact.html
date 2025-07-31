@@ -1,7 +1,13 @@
+
 <html>
   <head>
     <title>Contact</title>
     <style>
+      * {
+        text-align: center;
+        margin: auto;
+      }
+      
       body {
         background-color: #202930;
         color: white;
@@ -10,23 +16,23 @@
       input {
         background-color: white;
         width: 70%;
-        margin-left: 124;
+        /* margin-left: 124; */
         font-size: 20px;
         padding: 16px 16px;
         border-radius: 10px;
         border-color: black;
-        margin-button:20px;
+        margin-bottom: 20px;
       }
       
       textarea {
         background-color: white;
         width: 70%;
-        margin-left: 124;
+        /* margin-left: 124; */
         font-size: 20px;
         padding: 16px 16px;
         border-radius: 10px;
         border-color: black;
-        margin-button:20px;
+        margin-bottom: 20px;
       }
       
       button {
@@ -44,18 +50,22 @@
         opacity:80%;
         cursor: pointer;
       }
+
+      h1 {
+        padding: 20px 10px;
+      }
     </style>
     </head
     <body>
-    <center><h1>Contact me</h1></center>
-    <form
+        <h1>Contact me</h1>
+        <form
   action="https://formspree.io/f/mwpqbjeg"
   method="POST"
 >
-    <input type="text" name="full" placeholder="Full Name" autocomplete="off" required>
-    <input type="email" name="email" placeholder="E-mail Addres" autocomplete="off" required>
-    <textarea rows="5" cols="60" name="message" placeholder="Enter Text" autocomplete="off" required></textarea>
-    <button type="submit">Send message</button>
+        <input type="text" name="full" placeholder="Full Name" autocomplete="off" required>
+        <input type="email" name="email" placeholder="E-mail Addres" autocomplete="off" required>
+        <textarea rows="5" cols="60" name="message" placeholder="Enter Text" autocomplete="off" required></textarea>
+        <button type="submit">Send message</button>
     </form>
     </body>
 </html>
